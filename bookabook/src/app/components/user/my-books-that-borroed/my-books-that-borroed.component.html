@@ -1,0 +1,39 @@
+<div *ngIf="borrowedBook!=undefined" style="padding-bottom: 60px;">
+    <table mat-table [dataSource]="borrowedBook" matSort class="mat-elevation-z8">
+      <ng-container matColumnDef="Book Name">
+        <th mat-header-cell *matHeaderCellDef  mat-sort-header> שם הספר </th>
+        <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.book.nameId.name}} </td>
+      </ng-container>
+      <ng-container matColumnDef="Book Auther">
+        <th mat-header-cell *matHeaderCellDef  mat-sort-header> שם הסופר </th>
+        <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.book.autherId.Desc}} </td>
+      </ng-container>
+      <ng-container matColumnDef="Book Publishing">
+        <th mat-header-cell *matHeaderCellDef  mat-sort-header> הוצאה </th>
+        <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.book.publishingId.Desc}} </td>
+      </ng-container>
+      <ng-container matColumnDef="borrower name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> שם המשאיל: </th>
+        <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.borrower.firstName}} {{element.borrower.lastName}}</td>
+      </ng-container>
+      
+       <ng-container matColumnDef="borrower email">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> מייל המשאיל: </th>
+        <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.borrower.email}} </td>
+      </ng-container> 
+      <ng-container matColumnDef="borrower phone">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> טלפון המשאיל: </th>
+        <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.borrower.phone}} </td>
+      </ng-container>
+      <ng-container matColumnDef="Book Buttons">
+        <th mat-header-cell *matHeaderCellDef  mat-sort-header> אפשרויות נוספות </th>
+        <td mat-cell *matCellDef="let element"  class="text-md-right">
+          <button mat-raised-button (click)="returnBook(element.id)" >   הספר הוחזר אלי  </button>
+                </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  
+  <div  *ngIf="borrowedBook==undefined"> </div>

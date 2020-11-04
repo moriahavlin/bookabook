@@ -1,0 +1,35 @@
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\bin\Debug\BooksLibraryBL.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\bin\Debug\BooksLibraryBL.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\bin\Debug\BooksLibraryDAL.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\bin\Debug\BooksLibraryModels.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\bin\Debug\EntityFramework.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\bin\Debug\BooksLibraryDAL.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\bin\Debug\BooksLibraryModels.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\bin\Debug\EntityFramework.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\obj\Debug\BooksLibraryBL.csprojResolveAssemblyReference.cache
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\obj\Debug\BooksLibraryBL.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryBL\obj\Debug\BooksLibraryBL.pdb
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\BooksLibraryBL.dll
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\BooksLibraryBL.pdb
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\BooksLibraryDAL.dll
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\BooksLibraryModels.dll
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\EntityFramework.dll
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\BooksLibraryDAL.pdb
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\BooksLibraryModels.pdb
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\EntityFramework.xml
+D:\user\Desktop\server\server\BooksLibraryBL\obj\Debug\BooksLibraryBL.csprojResolveAssemblyReference.cache
+D:\user\Desktop\server\server\BooksLibraryBL\obj\Debug\BooksLibraryBL.dll
+D:\user\Desktop\server\server\BooksLibraryBL\obj\Debug\BooksLibraryBL.pdb
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\EntityFramework.SqlServer.dll
+D:\user\Desktop\server\server\BooksLibraryBL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\bin\Debug\BooksLibraryBL.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\bin\Debug\BooksLibraryBL.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\bin\Debug\BooksLibraryDAL.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\bin\Debug\BooksLibraryModels.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\bin\Debug\BooksLibraryDAL.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\bin\Debug\BooksLibraryModels.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\bin\Debug\EntityFramework.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\obj\Debug\BooksLibraryBL.csprojResolveAssemblyReference.cache
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\obj\Debug\BooksLibraryBL.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryBL\obj\Debug\BooksLibraryBL.pdb

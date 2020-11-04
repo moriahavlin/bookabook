@@ -1,0 +1,207 @@
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\obj\Debug\BooksLibraryApi.csprojResolveAssemblyReference.cache
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\ApplicationInsights.config
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\csc.exe
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\System.Collections.Immutable.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\vbc.exe
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\VBCSCompiler.exe
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\roslyn\VBCSCompiler.exe.config
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryApi.dll.config
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryApi.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryApi.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryBL.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryModels.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\EntityFramework.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\EntityFramework.SqlServer.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.Web.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.WindowsServer.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.ApplicationInsights.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Newtonsoft.Json.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Net.Http.Formatting.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Http.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Http.WebHost.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryDAL.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryBL.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryModels.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\EntityFramework.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\EntityFramework.SqlServer.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.Web.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.AI.WindowsServer.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.ApplicationInsights.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Newtonsoft.Json.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Net.Http.Formatting.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Http.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Http.WebHost.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\BooksLibraryDAL.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\obj\Debug\BooksLibraryApi.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\obj\Debug\BooksLibraryApi.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Antlr3.Runtime.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Microsoft.Web.Infrastructure.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Helpers.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Mvc.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Optimization.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Razor.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.WebPages.Deployment.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.WebPages.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.WebPages.Razor.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\WebGrease.dll
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\Antlr3.Runtime.pdb
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Helpers.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Mvc.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Optimization.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.Razor.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.WebPages.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.WebPages.Deployment.xml
+D:\user\Desktop\bookAbook\BookABookServer\BooksLibraryApi\bin\System.Web.WebPages.Razor.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\ApplicationInsights.config
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\csc.exe
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\System.Collections.Immutable.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\vbc.exe
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\VBCSCompiler.exe
+D:\user\Desktop\server\server\BooksLibraryApi\bin\roslyn\VBCSCompiler.exe.config
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryApi.dll.config
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryApi.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryApi.pdb
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Antlr3.Runtime.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryBL.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryModels.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\EntityFramework.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\EntityFramework.SqlServer.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.Web.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.WindowsServer.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.ApplicationInsights.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.Web.Infrastructure.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Newtonsoft.Json.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Net.Http.Formatting.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Helpers.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Http.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Http.WebHost.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Mvc.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Optimization.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Razor.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.WebPages.Deployment.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.WebPages.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.WebPages.Razor.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\WebGrease.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryDAL.dll
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryBL.pdb
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryModels.pdb
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Antlr3.Runtime.pdb
+D:\user\Desktop\server\server\BooksLibraryApi\bin\EntityFramework.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\EntityFramework.SqlServer.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.Web.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.AI.WindowsServer.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.ApplicationInsights.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Helpers.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Mvc.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Optimization.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Razor.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.WebPages.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.WebPages.Deployment.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.WebPages.Razor.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\Newtonsoft.Json.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Net.Http.Formatting.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Http.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\System.Web.Http.WebHost.xml
+D:\user\Desktop\server\server\BooksLibraryApi\bin\BooksLibraryDAL.pdb
+D:\user\Desktop\server\server\BooksLibraryApi\obj\Debug\BooksLibraryApi.csprojResolveAssemblyReference.cache
+D:\user\Desktop\server\server\BooksLibraryApi\obj\Debug\BooksLibraryApi.dll
+D:\user\Desktop\server\server\BooksLibraryApi\obj\Debug\BooksLibraryApi.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\ApplicationInsights.config
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\csc.exe
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\vbc.exe
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryApi.dll.config
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryApi.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryApi.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Antlr3.Runtime.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryBL.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryModels.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\EntityFramework.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\EntityFramework.SqlServer.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.Web.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.ApplicationInsights.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Newtonsoft.Json.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Net.Http.Formatting.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Helpers.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Http.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Http.WebHost.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Mvc.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Optimization.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Razor.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.WebPages.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\WebGrease.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryDAL.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryBL.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryModels.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Antlr3.Runtime.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\EntityFramework.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\EntityFramework.SqlServer.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.Web.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.ApplicationInsights.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Helpers.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Mvc.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Optimization.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Razor.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.WebPages.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\Newtonsoft.Json.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Net.Http.Formatting.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Http.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\System.Web.Http.WebHost.xml
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\bin\BooksLibraryDAL.pdb
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\obj\Debug\BooksLibraryApi.csprojResolveAssemblyReference.cache
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\obj\Debug\BooksLibraryApi.dll
+C:\Users\מוריה\Desktop\לימודים\פרויקט גמר יעל ילין ומוריה וולנר\פרויקט\server\server\BooksLibraryApi\obj\Debug\BooksLibraryApi.pdb

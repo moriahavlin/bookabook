@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5220c880d98d418ba8b90fd925b1030a" Name="Diagram2" ZoomLevel="79" >
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.AutherTable" Width="1.5" PointX="8" PointY="1.25" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.BooksCategriesTable" Width="1.5" PointX="3.25" PointY="9.75" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.BooksNameTable" Width="1.5" PointX="3.25" PointY="12.125" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.CityTable" Width="1.5" PointX="1" PointY="2.75" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.GenderTable" Width="1.5" PointX="1" PointY="5.75" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.KealYhadTable" Width="1.5" PointX="5.5" PointY="1.75" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.LendsTable" Width="1.5" PointX="10.75" PointY="5.375" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.PublishingTable" Width="1.5" PointX="3.25" PointY="1.375" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.UsersTable" Width="1.5" PointX="3.25" PointY="4.375" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_UsersTable_CityTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_UsersTable_GenderTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_LendsTable_UsersTable" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.MyBasketOfBooks" Width="1.5" PointX="10.75" PointY="8.625" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_MyBasketOfBooks_UsersTable" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.lendsStatusTable" Width="1.5" PointX="8.5" PointY="12" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.waitingForAbookTable" Width="1.5" PointX="12.75" PointY="1.75" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_LendsTable_lendsStatusTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_waitingForAbookTable_UsersTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_waitingForAbookTable_UsersTable1" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.BooksTable" Width="1.5" PointX="13.625" PointY="5.25" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_BooksTable_AutherTable1" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_BooksTable_BooksCategriesTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_BooksTable_BooksNameTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_BooksTable_PublishingTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_BooksTable_UsersTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_LendsTable_BooksTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_MyBasketOfBooks_BooksTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_waitingForAbookTable_BooksTable" />
+        <EntityTypeShape EntityType="BooksLibraryProjectModel.RatingTable" Width="1.5" PointX="15.875" PointY="4.5" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_RatingTable_BooksTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_RatingTable_KealYhadTable" />
+        <AssociationConnector Association="BooksLibraryProjectModel.FK_RatingTable_UsersTable" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

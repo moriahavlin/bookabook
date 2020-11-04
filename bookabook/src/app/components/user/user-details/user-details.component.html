@@ -1,0 +1,26 @@
+<div *ngIf="signedUser!=undefined" >
+<span class="boldtag">שם פרטי: </span>
+      <span>{{signedUser.firstName}}</span><br>
+      <span class="boldtag">שם משפחה: </span>
+      <span>{{signedUser.lastName}}</span><br>
+      <span class="boldtag">מייל: </span>
+      <span>{{signedUser.email}}</span><br>
+      <span class="boldtag">טלפון: </span>
+      <span >{{signedUser.phone}}</span><br>
+     <span class="boldtag">כתובת: </span>
+      <span>
+        {{signedUser.cityCode.Desc}}
+        {{signedUser.neighborhood}}
+        {{signedUser.address}}
+        {{signedUser.houseNumber}}
+      </span><br>
+      <span class="boldtag">מין: </span>
+      <span>{{signedUser.genderId.Desc}}</span><br>
+      <span class="boldtag">תאריך לידה: </span>
+      <span>{{signedUser.birthDate}}</span><br>
+
+
+      <button mat-raised-button (click)="openUserDialog()">ערוך פרטים </button>
+      
+      <br>
+    </div>

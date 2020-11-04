@@ -1,0 +1,39 @@
+<br>
+<button mat-raised-button (click)="openDialog(0)">הוסף ספר </button>
+<br>
+<div *ngIf="myBooks!=undefined" style="padding-bottom: 60px;">
+    <table mat-table [dataSource]="myBooks"  class="mat-elevation-z8">
+        <ng-container matColumnDef="Book ID">
+          <th mat-header-cell  *matHeaderCellDef  > קוד ספר </th>
+          <td mat-cell *matCellDef="let element" class="text-md-right"> {{element.id}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="Book Name">
+          <th mat-header-cell *matHeaderCellDef  > שם הספר </th>
+          <td mat-cell *matCellDef="let element" class="text-md-right"> {{element.nameId.name}} </td>
+        </ng-container>
+      
+      
+      
+      
+        <ng-container matColumnDef="Book Description">
+          <th mat-header-cell *matHeaderCellDef  > תיאור הספר </th>
+          <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.description}} </td>
+        </ng-container>
+        <ng-container matColumnDef="Book Buttons">
+          <th mat-header-cell *matHeaderCellDef  > אפשרויות נוספות </th>
+          <td mat-cell *matCellDef="let element"  class="text-md-right">
+                    <i class="material-icons" (click)="openDialog(element.id)" matTooltip="ערוך">
+                      
+                      border_color
+                    </i>
+                    &nbsp;&nbsp;
+                
+                  
+                  </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+</div>

@@ -1,0 +1,70 @@
+<div *ngIf="LendersBooksUserWantedToBorrow.length>0" style="padding-bottom: 60px;">
+  <span>ספרים שלך הממתינים לאישור על ידך:</span>
+
+
+  <table mat-table [dataSource]="LendersBooksUserWantedToBorrow" matSort class="mat-elevation-z8">
+    <ng-container matColumnDef="Lender Id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> קוד השאלה </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Book Id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> קוד הספר </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.book.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Book Name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> שם הספר </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.book.nameId.name}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="Book Auther">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> סופר </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.book.autherId.Desc}} </td>
+    </ng-container>
+    <ng-container matColumnDef="borrower name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> שם המבקש: </th>
+      <td mat-cell *matCellDef="let element" class="text-md-right"> {{element.borrower.firstName}} {{element.borrower.lastName}}</td>
+    </ng-container>
+    <ng-container matColumnDef="Book Buttons">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> אפשרויות נוספות </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right">
+        &nbsp;&nbsp;
+        <button mat-raised-button (click)="confirmBorrow(element.id)"> אשר </button>
+        <button mat-raised-button (click)="rejectBorrow(element.id)"> דחה </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+<div *ngIf="LendersBooksUserWantedToBorrow.length ==0">
+  אין ספרים הממתינים לאישור על ידך
+</div>
+<div *ngIf="booksUserWantedArr.length !=0">
+
+  <span>ספרים שאתה ביקשת להשאיל וממתינים לאישור בעל הספר</span>
+  <table mat-table [dataSource]="booksUserWantedArr" matSort class="mat-elevation-z8">
+    <ng-container matColumnDef="Lender Id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> קוד השאלה </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Book Id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> קוד הספר </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.book.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Book Name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> שם הספר </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right"> {{element.book.nameId.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Book Buttons">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> אפשרויות נוספות </th>
+      <td mat-cell *matCellDef="let element"  class="text-md-right"> </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsWanted"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsWanted;"></tr>
+  </table>
+</div>
+<div *ngIf="booksUserWantedArr.length ==0">
+  אין ספרים שאתה ביקשת להשאיל וממתינים לאישור בעל הספר    
+</div>

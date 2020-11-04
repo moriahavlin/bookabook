@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BooksLibraryProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AutherTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BookPicsTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bookId" Type="int" Nullable="false" />
+    <Property Name="url" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BooksCategriesTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BooksNameTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rating" Type="int" />
+  </EntityType>
+  <EntityType Name="BooksTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="nameId" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="categoryId" Type="int" Nullable="false" />
+    <Property Name="publishingId" Type="int" Nullable="false" />
+    <Property Name="description" Type="text" Nullable="false" />
+    <Property Name="isBorrowed" Type="bit" Nullable="false" />
+    <Property Name="lenderId" Type="int" Nullable="false" />
+    <Property Name="autherId" Type="int" Nullable="false" />
+    <Property Name="numOfPages" Type="int" Nullable="false" />
+    <Property Name="picNAme" Type="varchar" MaxLength="50" />
+    <Property Name="numberOfViewers" Type="int" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="CityTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GenderTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KealYhadTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lendsStatusTable">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="statusName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LendsTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="borrowerId" Type="int" Nullable="false" />
+    <Property Name="bookId" Type="int" Nullable="false" />
+    <Property Name="date" Type="date" Nullable="false" />
+    <Property Name="bookIsActive" Type="bit" Nullable="false" />
+    <Property Name="statusCode" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyBasketOfBooks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idBook" Type="int" Nullable="false" />
+    <Property Name="idUser" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PublishingTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RatingTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="borrowerId" Type="int" />
+    <Property Name="rating" Type="int" />
+    <Property Name="desk" Type="nvarchar(max)" />
+    <Property Name="kealYhad" Type="int" />
+    <Property Name="bookId" Type="int" Nullable="false" />
+    <Property Name="dateInsert" Type="date" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UsersTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="firstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="lastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone" Type="varchar" MaxLength="50" />
+    <Property Name="cityCode" Type="int" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="houseNumber" Type="int" Nullable="false" />
+    <Property Name="neighborhood" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="genderId" Type="int" />
+    <Property Name="birthDate" Type="date" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="waitingForAbookTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userCode" Type="int" Nullable="false" />
+    <Property Name="bookCode" Type="int" Nullable="false" />
+    <Property Name="bookOwnerID" Type="int" />
+  </EntityType>
+  <Association Name="FK_BooksTable_AutherTable1">
+    <End Role="AutherTable" Type="Self.AutherTable" Multiplicity="1" />
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AutherTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="autherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksTable_BooksCategriesTable">
+    <End Role="BooksCategriesTable" Type="Self.BooksCategriesTable" Multiplicity="1" />
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksCategriesTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="categoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksTable_BooksNameTable">
+    <End Role="BooksNameTable" Type="Self.BooksNameTable" Multiplicity="1" />
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksNameTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="nameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksTable_PublishingTable">
+    <End Role="PublishingTable" Type="Self.PublishingTable" Multiplicity="1" />
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PublishingTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="publishingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksTable_UsersTable">
+    <End Role="UsersTable" Type="Self.UsersTable" Multiplicity="1" />
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="lenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LendsTable_BooksTable">
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="1" />
+    <End Role="LendsTable" Type="Self.LendsTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="LendsTable">
+        <PropertyRef Name="bookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LendsTable_lendsStatusTable">
+    <End Role="lendsStatusTable" Type="Self.lendsStatusTable" Multiplicity="1" />
+    <End Role="LendsTable" Type="Self.LendsTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lendsStatusTable">
+        <PropertyRef Name="code" />
+      </Principal>
+      <Dependent Role="LendsTable">
+        <PropertyRef Name="statusCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LendsTable_UsersTable">
+    <End Role="UsersTable" Type="Self.UsersTable" Multiplicity="1" />
+    <End Role="LendsTable" Type="Self.LendsTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="LendsTable">
+        <PropertyRef Name="borrowerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MyBasketOfBooks_BooksTable">
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="1" />
+    <End Role="MyBasketOfBooks" Type="Self.MyBasketOfBooks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MyBasketOfBooks">
+        <PropertyRef Name="idBook" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MyBasketOfBooks_UsersTable">
+    <End Role="UsersTable" Type="Self.UsersTable" Multiplicity="1" />
+    <End Role="MyBasketOfBooks" Type="Self.MyBasketOfBooks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MyBasketOfBooks">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RatingTable_BooksTable">
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="1" />
+    <End Role="RatingTable" Type="Self.RatingTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RatingTable">
+        <PropertyRef Name="bookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RatingTable_KealYhadTable">
+    <End Role="KealYhadTable" Type="Self.KealYhadTable" Multiplicity="0..1" />
+    <End Role="RatingTable" Type="Self.RatingTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KealYhadTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RatingTable">
+        <PropertyRef Name="kealYhad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RatingTable_UsersTable">
+    <End Role="UsersTable" Type="Self.UsersTable" Multiplicity="0..1" />
+    <End Role="RatingTable" Type="Self.RatingTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RatingTable">
+        <PropertyRef Name="borrowerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersTable_CityTable">
+    <End Role="CityTable" Type="Self.CityTable" Multiplicity="1" />
+    <End Role="UsersTable" Type="Self.UsersTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UsersTable">
+        <PropertyRef Name="cityCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersTable_GenderTable">
+    <End Role="GenderTable" Type="Self.GenderTable" Multiplicity="0..1" />
+    <End Role="UsersTable" Type="Self.UsersTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UsersTable">
+        <PropertyRef Name="genderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_waitingForAbookTable_BooksTable">
+    <End Role="BooksTable" Type="Self.BooksTable" Multiplicity="1" />
+    <End Role="waitingForAbookTable" Type="Self.waitingForAbookTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="waitingForAbookTable">
+        <PropertyRef Name="bookCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_waitingForAbookTable_UsersTable">
+    <End Role="UsersTable" Type="Self.UsersTable" Multiplicity="1" />
+    <End Role="waitingForAbookTable" Type="Self.waitingForAbookTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="waitingForAbookTable">
+        <PropertyRef Name="userCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_waitingForAbookTable_UsersTable1">
+    <End Role="UsersTable" Type="Self.UsersTable" Multiplicity="0..1" />
+    <End Role="waitingForAbookTable" Type="Self.waitingForAbookTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="waitingForAbookTable">
+        <PropertyRef Name="bookOwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BooksLibraryProjectModelStoreContainer">
+    <EntitySet Name="AutherTable" EntityType="Self.AutherTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookPicsTable" EntityType="Self.BookPicsTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BooksCategriesTable" EntityType="Self.BooksCategriesTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BooksNameTable" EntityType="Self.BooksNameTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BooksTable" EntityType="Self.BooksTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CityTable" EntityType="Self.CityTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GenderTable" EntityType="Self.GenderTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KealYhadTable" EntityType="Self.KealYhadTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lendsStatusTable" EntityType="Self.lendsStatusTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LendsTable" EntityType="Self.LendsTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MyBasketOfBooks" EntityType="Self.MyBasketOfBooks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PublishingTable" EntityType="Self.PublishingTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RatingTable" EntityType="Self.RatingTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsersTable" EntityType="Self.UsersTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="waitingForAbookTable" EntityType="Self.waitingForAbookTable" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BooksTable_AutherTable1" Association="Self.FK_BooksTable_AutherTable1">
+      <End Role="AutherTable" EntitySet="AutherTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksTable_BooksCategriesTable" Association="Self.FK_BooksTable_BooksCategriesTable">
+      <End Role="BooksCategriesTable" EntitySet="BooksCategriesTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksTable_BooksNameTable" Association="Self.FK_BooksTable_BooksNameTable">
+      <End Role="BooksNameTable" EntitySet="BooksNameTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksTable_PublishingTable" Association="Self.FK_BooksTable_PublishingTable">
+      <End Role="PublishingTable" EntitySet="PublishingTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksTable_UsersTable" Association="Self.FK_BooksTable_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LendsTable_BooksTable" Association="Self.FK_LendsTable_BooksTable">
+      <End Role="BooksTable" EntitySet="BooksTable" />
+      <End Role="LendsTable" EntitySet="LendsTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LendsTable_lendsStatusTable" Association="Self.FK_LendsTable_lendsStatusTable">
+      <End Role="lendsStatusTable" EntitySet="lendsStatusTable" />
+      <End Role="LendsTable" EntitySet="LendsTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LendsTable_UsersTable" Association="Self.FK_LendsTable_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="LendsTable" EntitySet="LendsTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MyBasketOfBooks_BooksTable" Association="Self.FK_MyBasketOfBooks_BooksTable">
+      <End Role="BooksTable" EntitySet="BooksTable" />
+      <End Role="MyBasketOfBooks" EntitySet="MyBasketOfBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MyBasketOfBooks_UsersTable" Association="Self.FK_MyBasketOfBooks_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="MyBasketOfBooks" EntitySet="MyBasketOfBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RatingTable_BooksTable" Association="Self.FK_RatingTable_BooksTable">
+      <End Role="BooksTable" EntitySet="BooksTable" />
+      <End Role="RatingTable" EntitySet="RatingTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RatingTable_KealYhadTable" Association="Self.FK_RatingTable_KealYhadTable">
+      <End Role="KealYhadTable" EntitySet="KealYhadTable" />
+      <End Role="RatingTable" EntitySet="RatingTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RatingTable_UsersTable" Association="Self.FK_RatingTable_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="RatingTable" EntitySet="RatingTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersTable_CityTable" Association="Self.FK_UsersTable_CityTable">
+      <End Role="CityTable" EntitySet="CityTable" />
+      <End Role="UsersTable" EntitySet="UsersTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersTable_GenderTable" Association="Self.FK_UsersTable_GenderTable">
+      <End Role="GenderTable" EntitySet="GenderTable" />
+      <End Role="UsersTable" EntitySet="UsersTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_waitingForAbookTable_BooksTable" Association="Self.FK_waitingForAbookTable_BooksTable">
+      <End Role="BooksTable" EntitySet="BooksTable" />
+      <End Role="waitingForAbookTable" EntitySet="waitingForAbookTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_waitingForAbookTable_UsersTable" Association="Self.FK_waitingForAbookTable_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="waitingForAbookTable" EntitySet="waitingForAbookTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_waitingForAbookTable_UsersTable1" Association="Self.FK_waitingForAbookTable_UsersTable1">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="waitingForAbookTable" EntitySet="waitingForAbookTable" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

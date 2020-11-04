@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BooksLibraryProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BooksLibraryProjectEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AutherTable" EntityType="BooksLibraryProjectModel.AutherTable" />
+    <EntitySet Name="BooksCategriesTable" EntityType="BooksLibraryProjectModel.BooksCategriesTable" />
+    <EntitySet Name="BooksNameTable" EntityType="BooksLibraryProjectModel.BooksNameTable" />
+    <EntitySet Name="CityTable" EntityType="BooksLibraryProjectModel.CityTable" />
+    <EntitySet Name="GenderTable" EntityType="BooksLibraryProjectModel.GenderTable" />
+    <EntitySet Name="KealYhadTable" EntityType="BooksLibraryProjectModel.KealYhadTable" />
+    <EntitySet Name="LendsTable" EntityType="BooksLibraryProjectModel.LendsTable" />
+    <EntitySet Name="PublishingTable" EntityType="BooksLibraryProjectModel.PublishingTable" />
+    <EntitySet Name="sysdiagrams" EntityType="BooksLibraryProjectModel.sysdiagrams" />
+    <EntitySet Name="UsersTable" EntityType="BooksLibraryProjectModel.UsersTable" />
+    <AssociationSet Name="FK_UsersTable_CityTable" Association="BooksLibraryProjectModel.FK_UsersTable_CityTable">
+      <End Role="CityTable" EntitySet="CityTable" />
+      <End Role="UsersTable" EntitySet="UsersTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersTable_GenderTable" Association="BooksLibraryProjectModel.FK_UsersTable_GenderTable">
+      <End Role="GenderTable" EntitySet="GenderTable" />
+      <End Role="UsersTable" EntitySet="UsersTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LendsTable_UsersTable" Association="BooksLibraryProjectModel.FK_LendsTable_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="LendsTable" EntitySet="LendsTable" />
+    </AssociationSet>
+    <EntitySet Name="MyBasketOfBooks" EntityType="BooksLibraryProjectModel.MyBasketOfBooks" />
+    <AssociationSet Name="FK_MyBasketOfBooks_UsersTable" Association="BooksLibraryProjectModel.FK_MyBasketOfBooks_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="MyBasketOfBooks" EntitySet="MyBasketOfBooks" />
+    </AssociationSet>
+    <EntitySet Name="lendsStatusTable" EntityType="BooksLibraryProjectModel.lendsStatusTable" />
+    <EntitySet Name="waitingForAbookTable" EntityType="BooksLibraryProjectModel.waitingForAbookTable" />
+    <AssociationSet Name="FK_LendsTable_lendsStatusTable" Association="BooksLibraryProjectModel.FK_LendsTable_lendsStatusTable">
+      <End Role="lendsStatusTable" EntitySet="lendsStatusTable" />
+      <End Role="LendsTable" EntitySet="LendsTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_waitingForAbookTable_UsersTable" Association="BooksLibraryProjectModel.FK_waitingForAbookTable_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="waitingForAbookTable" EntitySet="waitingForAbookTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_waitingForAbookTable_UsersTable1" Association="BooksLibraryProjectModel.FK_waitingForAbookTable_UsersTable1">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="waitingForAbookTable" EntitySet="waitingForAbookTable" />
+    </AssociationSet>
+    <EntitySet Name="BookPicsTable" EntityType="BooksLibraryProjectModel.BookPicsTable" />
+    <EntitySet Name="BooksTable" EntityType="BooksLibraryProjectModel.BooksTable" />
+    <AssociationSet Name="FK_BooksTable_AutherTable1" Association="BooksLibraryProjectModel.FK_BooksTable_AutherTable1">
+      <End Role="AutherTable" EntitySet="AutherTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksTable_BooksCategriesTable" Association="BooksLibraryProjectModel.FK_BooksTable_BooksCategriesTable">
+      <End Role="BooksCategriesTable" EntitySet="BooksCategriesTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksTable_BooksNameTable" Association="BooksLibraryProjectModel.FK_BooksTable_BooksNameTable">
+      <End Role="BooksNameTable" EntitySet="BooksNameTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksTable_PublishingTable" Association="BooksLibraryProjectModel.FK_BooksTable_PublishingTable">
+      <End Role="PublishingTable" EntitySet="PublishingTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BooksTable_UsersTable" Association="BooksLibraryProjectModel.FK_BooksTable_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="BooksTable" EntitySet="BooksTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LendsTable_BooksTable" Association="BooksLibraryProjectModel.FK_LendsTable_BooksTable">
+      <End Role="BooksTable" EntitySet="BooksTable" />
+      <End Role="LendsTable" EntitySet="LendsTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MyBasketOfBooks_BooksTable" Association="BooksLibraryProjectModel.FK_MyBasketOfBooks_BooksTable">
+      <End Role="BooksTable" EntitySet="BooksTable" />
+      <End Role="MyBasketOfBooks" EntitySet="MyBasketOfBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_waitingForAbookTable_BooksTable" Association="BooksLibraryProjectModel.FK_waitingForAbookTable_BooksTable">
+      <End Role="BooksTable" EntitySet="BooksTable" />
+      <End Role="waitingForAbookTable" EntitySet="waitingForAbookTable" />
+    </AssociationSet>
+    <EntitySet Name="RatingTable" EntityType="BooksLibraryProjectModel.RatingTable" />
+    <AssociationSet Name="FK_RatingTable_BooksTable" Association="BooksLibraryProjectModel.FK_RatingTable_BooksTable">
+      <End Role="BooksTable" EntitySet="BooksTable" />
+      <End Role="RatingTable" EntitySet="RatingTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RatingTable_KealYhadTable" Association="BooksLibraryProjectModel.FK_RatingTable_KealYhadTable">
+      <End Role="KealYhadTable" EntitySet="KealYhadTable" />
+      <End Role="RatingTable" EntitySet="RatingTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RatingTable_UsersTable" Association="BooksLibraryProjectModel.FK_RatingTable_UsersTable">
+      <End Role="UsersTable" EntitySet="UsersTable" />
+      <End Role="RatingTable" EntitySet="RatingTable" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AutherTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_AutherTable1" FromRole="AutherTable" ToRole="BooksTable" />
+  </EntityType>
+  <EntityType Name="BooksCategriesTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_BooksCategriesTable" FromRole="BooksCategriesTable" ToRole="BooksTable" />
+  </EntityType>
+  <EntityType Name="BooksNameTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rating" Type="Int32" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_BooksNameTable" FromRole="BooksNameTable" ToRole="BooksTable" />
+  </EntityType>
+  <EntityType Name="CityTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UsersTable" Relationship="BooksLibraryProjectModel.FK_UsersTable_CityTable" FromRole="CityTable" ToRole="UsersTable" />
+  </EntityType>
+  <EntityType Name="GenderTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UsersTable" Relationship="BooksLibraryProjectModel.FK_UsersTable_GenderTable" FromRole="GenderTable" ToRole="UsersTable" />
+  </EntityType>
+  <EntityType Name="KealYhadTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="RatingTable" Relationship="BooksLibraryProjectModel.FK_RatingTable_KealYhadTable" FromRole="KealYhadTable" ToRole="RatingTable" />
+  </EntityType>
+  <EntityType Name="LendsTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="borrowerId" Type="Int32" Nullable="false" />
+    <Property Name="bookId" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="bookIsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="UsersTable" Relationship="BooksLibraryProjectModel.FK_LendsTable_UsersTable" FromRole="LendsTable" ToRole="UsersTable" />
+    <Property Name="statusCode" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="lendsStatusTable" Relationship="BooksLibraryProjectModel.FK_LendsTable_lendsStatusTable" FromRole="LendsTable" ToRole="lendsStatusTable" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_LendsTable_BooksTable" FromRole="LendsTable" ToRole="BooksTable" />
+  </EntityType>
+  <EntityType Name="PublishingTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_PublishingTable" FromRole="PublishingTable" ToRole="BooksTable" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UsersTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="firstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cityCode" Type="Int32" Nullable="false" />
+    <Property Name="address" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="houseNumber" Type="Int32" Nullable="false" />
+    <Property Name="neighborhood" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="genderId" Type="Int32" />
+    <Property Name="birthDate" Type="DateTime" Precision="0" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CityTable" Relationship="BooksLibraryProjectModel.FK_UsersTable_CityTable" FromRole="UsersTable" ToRole="CityTable" />
+    <NavigationProperty Name="GenderTable" Relationship="BooksLibraryProjectModel.FK_UsersTable_GenderTable" FromRole="UsersTable" ToRole="GenderTable" />
+    <NavigationProperty Name="LendsTable" Relationship="BooksLibraryProjectModel.FK_LendsTable_UsersTable" FromRole="UsersTable" ToRole="LendsTable" />
+    <NavigationProperty Name="MyBasketOfBooks" Relationship="BooksLibraryProjectModel.FK_MyBasketOfBooks_UsersTable" FromRole="UsersTable" ToRole="MyBasketOfBooks" />
+    <NavigationProperty Name="waitingForAbookTable" Relationship="BooksLibraryProjectModel.FK_waitingForAbookTable_UsersTable" FromRole="UsersTable" ToRole="waitingForAbookTable" />
+    <NavigationProperty Name="waitingForAbookTable1" Relationship="BooksLibraryProjectModel.FK_waitingForAbookTable_UsersTable1" FromRole="UsersTable" ToRole="waitingForAbookTable" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_UsersTable" FromRole="UsersTable" ToRole="BooksTable" />
+    <NavigationProperty Name="RatingTable" Relationship="BooksLibraryProjectModel.FK_RatingTable_UsersTable" FromRole="UsersTable" ToRole="RatingTable" />
+  </EntityType>
+  <Association Name="FK_UsersTable_CityTable">
+    <End Type="BooksLibraryProjectModel.CityTable" Role="CityTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.UsersTable" Role="UsersTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UsersTable">
+        <PropertyRef Name="cityCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersTable_GenderTable">
+    <End Type="BooksLibraryProjectModel.GenderTable" Role="GenderTable" Multiplicity="0..1" />
+    <End Type="BooksLibraryProjectModel.UsersTable" Role="UsersTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenderTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UsersTable">
+        <PropertyRef Name="genderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LendsTable_UsersTable">
+    <End Type="BooksLibraryProjectModel.UsersTable" Role="UsersTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.LendsTable" Role="LendsTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="LendsTable">
+        <PropertyRef Name="borrowerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MyBasketOfBooks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idBook" Type="Int32" Nullable="false" />
+    <Property Name="idUser" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UsersTable" Relationship="BooksLibraryProjectModel.FK_MyBasketOfBooks_UsersTable" FromRole="MyBasketOfBooks" ToRole="UsersTable" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_MyBasketOfBooks_BooksTable" FromRole="MyBasketOfBooks" ToRole="BooksTable" />
+  </EntityType>
+  <Association Name="FK_MyBasketOfBooks_UsersTable">
+    <End Type="BooksLibraryProjectModel.UsersTable" Role="UsersTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.MyBasketOfBooks" Role="MyBasketOfBooks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MyBasketOfBooks">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="lendsStatusTable">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="statusName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LendsTable" Relationship="BooksLibraryProjectModel.FK_LendsTable_lendsStatusTable" FromRole="lendsStatusTable" ToRole="LendsTable" />
+  </EntityType>
+  <EntityType Name="waitingForAbookTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userCode" Type="Int32" Nullable="false" />
+    <Property Name="bookCode" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UsersTable" Relationship="BooksLibraryProjectModel.FK_waitingForAbookTable_UsersTable" FromRole="waitingForAbookTable" ToRole="UsersTable" />
+    <Property Name="bookOwnerID" Type="Int32" />
+    <NavigationProperty Name="UsersTable1" Relationship="BooksLibraryProjectModel.FK_waitingForAbookTable_UsersTable1" FromRole="waitingForAbookTable" ToRole="UsersTable" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_waitingForAbookTable_BooksTable" FromRole="waitingForAbookTable" ToRole="BooksTable" />
+  </EntityType>
+  <Association Name="FK_LendsTable_lendsStatusTable">
+    <End Type="BooksLibraryProjectModel.lendsStatusTable" Role="lendsStatusTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.LendsTable" Role="LendsTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lendsStatusTable">
+        <PropertyRef Name="code" />
+      </Principal>
+      <Dependent Role="LendsTable">
+        <PropertyRef Name="statusCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_waitingForAbookTable_UsersTable">
+    <End Type="BooksLibraryProjectModel.UsersTable" Role="UsersTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.waitingForAbookTable" Role="waitingForAbookTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="waitingForAbookTable">
+        <PropertyRef Name="userCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_waitingForAbookTable_UsersTable1">
+    <End Type="BooksLibraryProjectModel.UsersTable" Role="UsersTable" Multiplicity="0..1" />
+    <End Type="BooksLibraryProjectModel.waitingForAbookTable" Role="waitingForAbookTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="waitingForAbookTable">
+        <PropertyRef Name="bookOwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="BookPicsTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bookId" Type="Int32" Nullable="false" />
+    <Property Name="url" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="BooksTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="nameId" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="categoryId" Type="Int32" Nullable="false" />
+    <Property Name="publishingId" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="isBorrowed" Type="Boolean" Nullable="false" />
+    <Property Name="lenderId" Type="Int32" Nullable="false" />
+    <Property Name="autherId" Type="Int32" Nullable="false" />
+    <Property Name="numOfPages" Type="Int32" Nullable="false" />
+    <Property Name="picNAme" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AutherTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_AutherTable1" FromRole="BooksTable" ToRole="AutherTable" />
+    <NavigationProperty Name="BooksCategriesTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_BooksCategriesTable" FromRole="BooksTable" ToRole="BooksCategriesTable" />
+    <NavigationProperty Name="BooksNameTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_BooksNameTable" FromRole="BooksTable" ToRole="BooksNameTable" />
+    <NavigationProperty Name="PublishingTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_PublishingTable" FromRole="BooksTable" ToRole="PublishingTable" />
+    <NavigationProperty Name="UsersTable" Relationship="BooksLibraryProjectModel.FK_BooksTable_UsersTable" FromRole="BooksTable" ToRole="UsersTable" />
+    <NavigationProperty Name="LendsTable" Relationship="BooksLibraryProjectModel.FK_LendsTable_BooksTable" FromRole="BooksTable" ToRole="LendsTable" />
+    <NavigationProperty Name="MyBasketOfBooks" Relationship="BooksLibraryProjectModel.FK_MyBasketOfBooks_BooksTable" FromRole="BooksTable" ToRole="MyBasketOfBooks" />
+    <NavigationProperty Name="waitingForAbookTable" Relationship="BooksLibraryProjectModel.FK_waitingForAbookTable_BooksTable" FromRole="BooksTable" ToRole="waitingForAbookTable" />
+    <Property Name="numberOfViewers" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RatingTable" Relationship="BooksLibraryProjectModel.FK_RatingTable_BooksTable" FromRole="BooksTable" ToRole="RatingTable" />
+    <Property Name="isDeleted" Type="Boolean" />
+  </EntityType>
+  <Association Name="FK_BooksTable_AutherTable1">
+    <End Type="BooksLibraryProjectModel.AutherTable" Role="AutherTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AutherTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="autherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksTable_BooksCategriesTable">
+    <End Type="BooksLibraryProjectModel.BooksCategriesTable" Role="BooksCategriesTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksCategriesTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="categoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksTable_BooksNameTable">
+    <End Type="BooksLibraryProjectModel.BooksNameTable" Role="BooksNameTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksNameTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="nameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksTable_PublishingTable">
+    <End Type="BooksLibraryProjectModel.PublishingTable" Role="PublishingTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PublishingTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="publishingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BooksTable_UsersTable">
+    <End Type="BooksLibraryProjectModel.UsersTable" Role="UsersTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BooksTable">
+        <PropertyRef Name="lenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LendsTable_BooksTable">
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.LendsTable" Role="LendsTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="LendsTable">
+        <PropertyRef Name="bookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MyBasketOfBooks_BooksTable">
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.MyBasketOfBooks" Role="MyBasketOfBooks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MyBasketOfBooks">
+        <PropertyRef Name="idBook" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_waitingForAbookTable_BooksTable">
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.waitingForAbookTable" Role="waitingForAbookTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="waitingForAbookTable">
+        <PropertyRef Name="bookCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="RatingTable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="borrowerId" Type="Int32" />
+    <Property Name="rating" Type="Int32" />
+    <Property Name="desk" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="kealYhad" Type="Int32" />
+    <Property Name="bookId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BooksTable" Relationship="BooksLibraryProjectModel.FK_RatingTable_BooksTable" FromRole="RatingTable" ToRole="BooksTable" />
+    <NavigationProperty Name="KealYhadTable" Relationship="BooksLibraryProjectModel.FK_RatingTable_KealYhadTable" FromRole="RatingTable" ToRole="KealYhadTable" />
+    <NavigationProperty Name="UsersTable" Relationship="BooksLibraryProjectModel.FK_RatingTable_UsersTable" FromRole="RatingTable" ToRole="UsersTable" />
+    <Property Name="dateInsert" Type="DateTime" Precision="0" />
+  </EntityType>
+  <Association Name="FK_RatingTable_BooksTable">
+    <End Type="BooksLibraryProjectModel.BooksTable" Role="BooksTable" Multiplicity="1" />
+    <End Type="BooksLibraryProjectModel.RatingTable" Role="RatingTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BooksTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RatingTable">
+        <PropertyRef Name="bookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RatingTable_KealYhadTable">
+    <End Type="BooksLibraryProjectModel.KealYhadTable" Role="KealYhadTable" Multiplicity="0..1" />
+    <End Type="BooksLibraryProjectModel.RatingTable" Role="RatingTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KealYhadTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RatingTable">
+        <PropertyRef Name="kealYhad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RatingTable_UsersTable">
+    <End Type="BooksLibraryProjectModel.UsersTable" Role="UsersTable" Multiplicity="0..1" />
+    <End Type="BooksLibraryProjectModel.RatingTable" Role="RatingTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsersTable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RatingTable">
+        <PropertyRef Name="borrowerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

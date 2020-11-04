@@ -1,0 +1,46 @@
+<mat-tab-group class="tabsUserD">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>settings</mat-icon>
+      פרטים אישיים
+    </ng-template>
+    <app-user-details></app-user-details>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+      הספרים שאני העלתי לאתר
+    </ng-template>
+    <app-my-books></app-my-books>
+   
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+    <img src="../../../../assets/imags/man-reading.svg" >
+      ספרים ששאלתי
+    </ng-template>
+    <app-borrowed-books-by-user></app-borrowed-books-by-user>
+
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons">
+        favorite
+      </i>
+      הספרים האהובים שלי
+    </ng-template>
+    <users-basket-books></users-basket-books>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      ממתינים לאישור
+    </ng-template>
+     <app-waiting-for-approval></app-waiting-for-approval>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+ספרים שלך שמושאלים 
+    </ng-template>
+    <app-my-books-that-borroed></app-my-books-that-borroed>
+  </mat-tab>
+</mat-tab-group>

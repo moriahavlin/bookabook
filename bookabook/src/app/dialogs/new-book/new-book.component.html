@@ -1,0 +1,103 @@
+<div *ngIf="singleBook!=undefined">
+  <div mat-dialog-content>
+
+    <br>
+
+    <form name="form1" [formGroup]="addBookForm">
+      <!-- <mat-form-field class="example-full-width">
+        <input matInput placeholder="שם ספר" [(ngModel)]="singleBook.nameId.name" name="nameBook">
+      </mat-form-field> -->
+      <mat-form-field class="example-full-width col-md-6">
+        <input type="text" placeholder="שם ספר" 
+            aria-label="שם ספר" 
+            matInput formControlName="myBookNameControl"
+            (blur)="selectBookName()"
+          [matAutocomplete]="autoBookName"  name="nameBook">
+        <mat-autocomplete #autoBookName="matAutocomplete" [displayWith]="displayFnBookName">
+          <mat-option *ngFor="let option of filteredBookNameList | async" [value]="option">
+            {{option.name}}
+          </mat-option>
+        </mat-autocomplete>
+        <mat-error *ngIf="addBookForm?.controls['myBookNameControl'].invalid">{{getRequiredErrorMessage('שם ספר')}}
+        </mat-error>
+      </mat-form-field>
+     
+
+      <mat-form-field class="example-full-width col-md-6">
+        <mat-select placeholder="קטגוריה "[(ngModel)]="singleBook.categoryId.id" name="category">
+          <mat-option *ngFor="let category of categoryList" [value]="category">
+            {{category.Desc}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <!-- <mat-form-field class="example-full-width">
+        <input matInput [(ngModel)]="singleBook.categoryId.Desc" name="category" placeholder="קטגוריה ">
+      </mat-form-field> -->
+
+    
+      <!-- <mat-form-field class="example-full-width">
+
+        <input matInput name="mypublishing" [(ngModel)]="singleBook.publishingId.Desc" placeholder="מוציא לאור ">
+      </mat-form-field> -->
+      
+      <mat-form-field class="example-full-width col-md-6">
+        <input type="text" placeholder="מחבר ספר" aria-label="מחבר ספר" matInput [formControl]="myAuthersControl" 
+          [matAutocomplete]="autoAuthers" [(ngModel)]="singleBook.autherId.Code" name="autherId">
+        <mat-autocomplete #autoAuthers="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let option of filteredAuthersList | async" [value]="option">
+            {{option.Desc}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      
+      <mat-form-field class="example-full-width col-md-6">
+        <input type="text" placeholder="מוציא לאור" aria-label="מוציא לאור" matInput [formControl]="myPublishinControl" 
+          [matAutocomplete]="autoPublishing" [(ngModel)]="singleBook.publishingId.Code" name="mypublishing">
+        <mat-autocomplete #autoPublishing="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let publishing of filteredpublishingsList | async" [value]="publishing">
+            {{publishing.Desc}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+   
+      
+
+      
+      <!-- <mat-form-field class="example-full-width">
+        <input matInput [(ngModel)]="singleBook.autherId.Desc" placeholder="מחבר " name="autherId">
+      </mat-form-field> -->
+
+     
+      <mat-form-field class="example-full-width col-md-6">
+        <input matInput [(ngModel)]="singleBook.numOfPages" name="numOfPages" placeholder="  מס' עמודים בספר " formControlName="numOfPages">
+          <mat-error *ngIf="addBookForm?.controls['numOfPages'].invalid">{{getRequiredErrorMessage('מספר עמודים בספר')}}
+          </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width col-md-6">
+          <textarea  matInput [(ngModel)]="singleBook.description" name="description" placeholder="קצת על הספר " formControlName="description"></textarea>
+          <mat-error *ngIf="addBookForm?.controls['description'].invalid">{{getRequiredErrorMessage('קצת על הספר')}}
+          </mat-error>
+        </mat-form-field>
+     
+      <button mat-raised-button color="primary" for="picBook" onclick="document.getElementById('picBook').click()">הוסף
+        תמונת ספר <i class="material-icons">
+          attach_file
+        </i></button>
+      <input type="file" (change)="onFileChanged($event.target.files)" accept=".png,.PNG,.jpg,.JPG,.JPEG,.jpeg"
+        placeholder="הוסף תמונה" id="picBook" style="display:none;" name="imageB" />
+      <br>
+      <!-- <img [src]="imageUrl" alt="" style="width: 250px;">
+      <p-fileUpload name="myfile[]" customUpload="true" (uploadHandler)="myUploader($event)" accept="image/*"
+        maxFileSize="1000000"></p-fileUpload> -->
+    </form>
+
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">לא תודה</button>
+
+    <button mat-button (click)="onAddClick()" [mat-dialog-close]="data" cdkFocusInitial
+      *ngIf="isEdit==false ">הוסף</button>
+    <button mat-button (click)="onEditClick()" [mat-dialog-close]="data" cdkFocusInitial
+      *ngIf="isEdit!=false ">עדכן</button>
+  </div>
+</div>

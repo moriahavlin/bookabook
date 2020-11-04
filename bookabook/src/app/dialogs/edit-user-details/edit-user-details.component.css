@@ -1,0 +1,43 @@
+.example-radio-group {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+  
+  mat-form-field{
+    text-align: right;
+  }
+  .example-form {
+    min-width: 300px;
+    max-width: 500px;
+    /* width: 100%; */
+  }
+  .example-mat {
+    min-width: 200px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+  
+    width: 200px;
+  }
+
+
+  table {
+    width:80%;
+    text-align: center;
+    /* padding: 200px; */
+    margin: 25px;
+  }
+  th{
+    text-align: center;
+
+  }
+  td{
+    text-align: center;
+
+  }

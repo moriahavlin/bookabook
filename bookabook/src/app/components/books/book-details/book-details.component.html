@@ -1,0 +1,148 @@
+<br><br>
+<div *ngIf="signalBook != undefined ; else templateName">
+   <div class="col-md-12">
+      <mat-card class="example-mat col-md-6">
+         <mat-card-header>
+            <!-- <div mat-card-avatar></div> -->
+            <mat-card-title>{{signalBook.nameId.name}} <br>
+               <img [src]='signalBook.picNAme' class="picBooks">
+               <br>
+
+            </mat-card-title>
+         </mat-card-header>
+         <mat-card-content>
+            <i class="material-icons" matTooltip="כמות הצופים בספר :{{signalBook.numberOfViewers}}">
+
+               remove_red_eye
+
+            </i>
+            {{signalBook.numberOfViewers}}
+            <span class="boldtag">קטגוריה: </span>
+            <span>{{signalBook.categoryId.Desc}}</span><br>
+
+            <span class="boldtag">מוציא לאור: </span>
+            <span>{{signalBook.publishingId.Desc}}</span><br>
+            <span class="boldtag">מחבר: </span>
+            <span>{{signalBook.autherId.Desc}}</span><br>
+            <span class="boldtag">מס' עמודים בספר: </span>
+            <span>{{signalBook.numOfPages}}</span><br>
+            <span class="boldtag">קצת על הספר: </span>
+            <span>{{signalBook.description}}</span><br>
+
+            <button mat-raised-button (click)="borrowBook(item.id)" *ngIf="signalBook.isBorrowed==false"> השאל </button>
+
+            <button mat-raised-button (click)="updateWhenBookIsAvailable(signalBook.id)"
+               *ngIf="signalBook.isBorrowed==true"> עדכן אותי
+               כאשר הספר זמין </button>
+         </mat-card-content>
+
+      </mat-card>
+      <div *ngIf="signalBook.Statistics!=undefined" class="col-md-6">
+
+         <div style="width:  500px" *ngIf="chartdata!=undefined">
+            כמה השאילו ספר זה?
+            <p-chart type="pie" [data]="chartdata"></p-chart>
+
+         </div>
+
+         <span> סה"כ מספר השאלות שהיו לספר זה:</span>
+         <span>{{signalBook.Statistics.numberOfLendings}}</span><br>
+
+         <span> מספר צופים בספר:</span>
+         <span> {{signalBook.Statistics.numberOfViewers}}</span><br>
+
+         <span> מספר האנשים שאהבו ספר זה:</span>
+         <span>{{signalBook.Statistics.numberOfLikeIt}}</span><br>
+
+
+         <span>הדרוגים :</span>
+         <div *ngIf="signalBook.Statistics.rstingList!=undefined">
+            <i class="material-icons star"> star </i><i class="material-icons star"> star_border </i><i
+               class="material-icons star"> star_border </i><i class="material-icons star"> star_border </i><i
+               class="material-icons star"> star_border </i>
+            : {{signalBook.Statistics.rstingList[0]}}
+
+<br>
+
+            <i class="material-icons star"> star </i><i class="material-icons star"> star </i><i
+               class="material-icons star"> star_border </i><i class="material-icons star"> star_border </i><i
+               class="material-icons star"> star_border </i>
+            : {{signalBook.Statistics.rstingList[1]}}
+<br>
+            <i class="material-icons star"> star </i><i class="material-icons star"> star </i><i
+               class="material-icons star"> star </i><i class="material-icons star"> star_border </i><i
+               class="material-icons star"> star_border </i>
+            : {{signalBook.Statistics.rstingList[2]}}
+            <br>
+            <i class="material-icons star"> star </i><i class="material-icons star"> star </i><i
+               class="material-icons star"> star </i><i class="material-icons star"> star </i><i
+               class="material-icons star"> star_border </i>
+            : {{signalBook.Statistics.rstingList[3]}}
+            <br>
+            <i class="material-icons star"> star </i><i class="material-icons star"> star </i><i
+               class="material-icons star"> star </i><i class="material-icons star"> star </i><i
+               class="material-icons star"> star </i>
+            : {{signalBook.Statistics.rstingList[4]}}
+            <!-- <span *ngFor="let item of signalBook.Statistics.rstingList; index as i">
+            <span>{{i+1}} דרוג: </span>
+
+            <span> {{item}}</span><br>
+         </span> -->
+
+         </div>
+         <span>ממוצע :</span>
+         <p-rating [(ngModel)]="signalBook.Statistics.averageRating" readonly="true" stars="5" [cancel]="false"></p-rating>
+
+         <span>{{signalBook.Statistics.averageRating}}</span>
+
+
+
+      </div>
+
+   </div>
+   <div style="background-color: #DCDCDC" class="col-md-12">
+
+      התגובה והדרוג שלך :
+      <br>
+      <textarea name="a" [(ngModel)]="newRating.desk" id="descriptionRating" cols="30" rows="10" class="form-control"
+         placeholder="כתוב את התגובה שלך"></textarea>
+      <br>
+      <span class="boldtag">דירוג: </span>{{newRating.rating}}
+      <p-rating [(ngModel)]="newRating.rating"></p-rating>
+      <br>
+      <span class="boldtag"></span>
+      <!-- <mat-form-field class="example-full-width ">
+         <mat-select placeholder="קהל יעד על פי דעתך:  " name="kehalYaad" [(ngModel)]="selectedKehalYaad">
+            <mat-option *ngFor="let item of kehalYaadSelect" [value]="kehalYaad">
+               {{item.Desc}}
+            </mat-option>
+         </mat-select>
+      </mat-form-field> -->
+      <br>
+      <button mat-raised-button (click)="rateBook()"> דרג אותי </button>
+      <br>
+      <br>
+   </div>
+
+   <div>
+      תגובות אחרונות : <br>
+      <div *ngFor="let item of signalBook.ratingList">
+         <mat-card *ngIf="item.desk!=null" style="background-color: 	#F5F5F5">
+            {{item.desk}}
+         </mat-card>
+         <mat-card *ngIf="item.dateInsert!=null" style="background-color: 	#F5F5F5">
+            {{item.dateInsert}}
+         </mat-card>
+         <br>
+      </div>
+   </div>
+</div>
+<ng-template #templateName>
+   <img src="../../../../assets/imags/search1.jpg" style="width: 150px">
+   <img src="../../../../assets/imags/search2.jpg" style="width: 150px">
+
+   <img src="../../../../assets/imags/search3.png" style="width: 150px">
+   <br>
+
+   מחפש ......
+</ng-template>

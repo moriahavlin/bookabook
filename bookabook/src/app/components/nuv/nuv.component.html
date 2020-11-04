@@ -1,0 +1,49 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    
+   
+    
+    <button mat-button  routerLink="/books">
+      <img src="../../../assets/imags/books-stack-of-three.svg" style="width: 25px">
+      מאגר הספרים</button>
+    <button mat-button  routerLink="/home">
+      <mat-icon>home</mat-icon>
+    
+      דף הבית</button>
+  
+    
+    <!-- <button mat-button  routerLink="/map">
+      <i class="material-icons">
+          map
+          </i>
+      מפה  </button> -->
+    
+    <button mat-button  routerLink="/userDetails" >
+      <i class="material-icons" >
+        account_circle
+        </i>
+        החשבון שלי </button>
+    <button mat-button  routerLink="/aboutTheSite">אודת האתר</button>
+    
+    <span class="example-spacer"></span>
+
+
+    <span *ngIf="baseService.activeUser" > 
+      שלום {{baseService.activeUser.firstName}} 
+      {{baseService.activeUser.lastName}}
+          <button mat-button (click)="logOut()">להתנתק</button>
+    </span>
+    <button mat-button  routerLink="/login" *ngIf="baseService.activeUser==undefined">
+      <img src="../../../assets/imags/log-in.svg" style="width: 25px">
+      הרשם/התחבר  </button>
+
+    <img src='../../assets/imags/newLogo.png' class="picNuv"><br>
+   
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<br />
+
+
+  
